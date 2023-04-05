@@ -2,7 +2,8 @@
 
 import React, { useState } from 'react';
 import Link from './Link';
-import { Bars3Icon } from '@heroicons/react/24/solid'
+import { Bars3Icon,XMarkIcon
+} from '@heroicons/react/24/solid'
 
 
 
@@ -47,16 +48,27 @@ const Navbar = () => {
 
 
     return (
-        <nav>
-        <div onClick={() => setOpen(!open) }>
+        <nav className='bg-slate-600' >
+        <div onClick={() => setOpen(!open) } className='md:hidden' >
+            
+            <span>{
+            
+            open === true? 
+            
+            <Bars3Icon className="h-8 w-8 text-blue-500" />
+            
+            : <XMarkIcon className="h-8 w-8 text-blue-500" />
 
-            <span>{open === true? 'open': 'close'}</span>
 
-        <Bars3Icon className="h-8 w-8 text-blue-500" />
+              }
+              </span>
+
+      
 
         </div>
 
-        <ul className='md:flex'>
+        <ul className={`md:flex absolute md:static ${ open ? '-top-48': 'top-6'  }  `}>
+
         {
 
 
