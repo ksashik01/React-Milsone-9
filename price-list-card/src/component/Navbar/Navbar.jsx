@@ -48,8 +48,8 @@ const Navbar = () => {
 
 
     return (
-        <nav className='bg-slate-600' >
-        <div onClick={() => setOpen(!open) } className='md:hidden' >
+        <nav className="bg-slate-800" >
+        <div  onClick={() => setOpen(!open) } className='md:hidden' >
             
             <span>{
             
@@ -67,7 +67,7 @@ const Navbar = () => {
 
         </div>
 
-        <ul className={`md:flex absolute md:static ${ open ? '-top-48': 'top-6'  }  `}>
+        <ul className={`md:flex absolute md:static bg-slate-800 ${ open ? '-top-48': 'top-6'  }  `}>
 
         {
 

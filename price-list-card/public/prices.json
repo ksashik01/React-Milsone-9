@@ -1,0 +1,40 @@
+
+
+[
+
+    {
+        "id": 1,
+        "name": "Basic Membership",
+        "price": 50,
+        "features":["Gys Access", "Locker Room", "1 Fitness Room"]
+    
+    
+    
+    }, 
+    
+    {
+        "id": 2,
+        "name": "Premium Membership",
+        "price": 500,
+        "features":["Gys Access", "Locker Room", "1 Fitness Room, Ftness gor, High School"]
+    
+    
+    
+    }, 
+    
+    
+    
+    
+    {
+        "id": 3,
+        "name": "BCorporate Membership",
+        "price": 150,
+        "features":["Gys Access", "Locker Room", "1 Fitness Room, prothom alo"]
+    
+    
+    
+    }
+    
+    
+    
+    ]
